@@ -28,8 +28,12 @@
             >Web<span class="logo-span">Studio</span></a
           >
           <ul class="navigation-list">
-            <li><a href="./index.html" class="navigation-links current">Studio</a></li>
-            <li><a href="./portfolio.html" class="navigation-links">Portfolio</a></li>
+            <li>
+              <a href="./index.html" class="navigation-links current">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="navigation-links">Portfolio</a>
+            </li>
             <li><a href="" class="navigation-links">Contacts</a></li>
           </ul>
         </nav>
@@ -128,9 +132,30 @@
           <h2>What Are We Doing</h2>
 
           <ul class="third-section-list">
-            <li><img src="./images/what/what1.jpg" alt="What section first image" width="360" height="300"></li>
-            <li><img src="./images/what/what2.jpg" alt="What section second image" width="360" height="300"></li>
-            <li><img src="./images/what/what3.jpg" alt="What section third image" width="360" height="300"></li>
+            <li>
+              <img
+                src="./images/what/what1.jpg"
+                alt="What section first image"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/what/what2.jpg"
+                alt="What section second image"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/what/what3.jpg"
+                alt="What section third image"
+                width="360"
+                height="300"
+              />
+            </li>
           </ul>
         </div>
       </section>
@@ -160,7 +185,7 @@
                     </a>
                   </li>
                   <li class="social-link">
-                    <a href="" class="social-link-a"> 
+                    <a href="" class="social-link-a">
                       <svg class="social-link-icon" height="16" width="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
@@ -202,7 +227,7 @@
                     </a>
                   </li>
                   <li class="social-link">
-                    <a href="" class="social-link-a"> 
+                    <a href="" class="social-link-a">
                       <svg class="social-link-icon" height="16" width="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
@@ -244,7 +269,7 @@
                     </a>
                   </li>
                   <li class="social-link">
-                    <a href="" class="social-link-a"> 
+                    <a href="" class="social-link-a">
                       <svg class="social-link-icon" height="16" width="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
@@ -286,7 +311,7 @@
                     </a>
                   </li>
                   <li class="social-link">
-                    <a href="" class="social-link-a"> 
+                    <a href="" class="social-link-a">
                       <svg class="social-link-icon" height="16" width="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
@@ -387,7 +412,7 @@
               </a>
             </li>
             <li class="social-link">
-              <a href="" class="social-link-a footer-link"> 
+              <a href="" class="social-link-a footer-link">
                 <svg class="social-link-icon" height="24" width="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
@@ -419,6 +444,61 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="backdrop-form">
+          <fieldset>
+            <legend class="backdrop-caption">
+              Leave your contacts and we will call you back
+            </legend>
+
+            <label>
+              Name
+              <input type="text" class="backdrop-input" name="name" />
+              <svg class="backdrop-input-icon">
+                <use></use>
+              </svg>
+            </label>
+
+            <label>
+              Phone
+              <input type="tel" class="backdrop-input" name="phone" />
+              <svg class="backdrop-input-icon">
+                <use></use>
+              </svg>
+            </label>
+
+            <label>
+              Email
+              <input type="email" class="backdrop-input" name="email" />
+              <svg class="backdrop-input-icon">
+                <use></use>
+              </svg>
+            </label>
+
+            <label>
+              Phone
+              <textarea class="backdrop-text backdrop-input" rows="3" placeholder="Text input"></textarea>
+              <svg class="backdrop-input-icon">
+                <use></use>
+              </svg>
+            </label>
+
+            <label class="checkbox-label">
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  name="policy"
+                  class="backdrop-checkbox"
+                />
+              </div>
+              <p class="checkbox-text">
+                I accept the terms and conditions of the
+                <span>Privacy Policy</span>
+              </p>
+            </label>
+          </fieldset>
+
+          <button type="submit" class="backdrop-send-button">Send</button>
+        </form>
       </div>
     </div>
 
