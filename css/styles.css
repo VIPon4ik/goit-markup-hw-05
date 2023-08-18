@@ -645,6 +645,12 @@ fieldset {
 .input-container {
   position: relative;
 }
+.input-container:focus-within .backdrop-input {
+  border-color:#4D5AE5;
+}
+.input-container:focus-within .input-svg {
+  fill: #4D5AE5;
+}
 .backdrop-input {
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
@@ -652,6 +658,8 @@ fieldset {
   padding: 8px 38px;
   width: 100%;
   margin-bottom: 8px;
+  outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-svg {
   position: absolute;
@@ -659,6 +667,7 @@ fieldset {
   top: 50%;
   transform: translateY(-50%);
   left: 16px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop-comment {
   padding: 8px 16px;
@@ -690,6 +699,7 @@ fieldset {
   letter-spacing: 0.48px;
   text-decoration-line: underline;
   display: inline-block;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-button {
   margin: 0 auto;
@@ -707,4 +717,9 @@ fieldset {
   letter-spacing: 0.64px;
   width: 169px;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-button:hover,
+.form-button:focus {
+  background-color: rgba(64, 75, 191, 1);
 }
