@@ -88,6 +88,7 @@ section {
 textarea {
   resize: none;
   padding: 0;
+  margin: 0;
 }
 
 input {
@@ -698,8 +699,6 @@ fieldset {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
-  margin-bottom: 16px;
 }
 .label-container label {
   color: var(--lightslate, #8E8F99);
@@ -715,8 +714,10 @@ fieldset {
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
   margin-top: 4px;
+  margin-bottom: 8px;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2E2F42;
 }
 
 .backdrop-input:focus {
@@ -743,8 +744,15 @@ fieldset {
 .backdrop-text {
   padding: 8px 16px;
   min-height: 120px;
+  font-size: 12px;
+  color: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.16; 
+  letter-spacing: 0.48px;
+  margin-bottom: 16px;
 }
-.checkbox-label {
+.checkbox-input-container {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -757,19 +765,22 @@ fieldset {
 .backdrop-checkbox {
   height: 16px;
   width: 16px;
+  cursor: pointer;
 }
 .backdrop-input-checkbox-icon {
   position: absolute;
   left: 0;
   top: 1px;
-  z-index: 10;
+  z-index: -9;
   opacity: 0;
 }
 .checkbox-text {
   display: inline;
   color: var(--lightslate, #8E8F99);
   font-size: 12px;
-  line-height: 1.16;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; 
   letter-spacing: 0.48px;
 }
 .checkbox-text-policy-link {
@@ -782,6 +793,7 @@ fieldset {
 }
 .backdrop-send-button {
   margin-top: 24px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 
