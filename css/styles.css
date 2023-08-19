@@ -554,8 +554,6 @@ fieldset {
 .footer-form-container {
   margin-left: 80px;
 }
-.footer-form {
-}
 .footer-form-text {
   color: var(--white, #FFF);
   font-weight: 500;
@@ -579,6 +577,7 @@ fieldset {
   color: white;
 }
 .footer-input-button-container {
+  display: flex;
 }
 .footer-form-button {
   border-radius: 4px;
@@ -668,8 +667,6 @@ fieldset {
 
 /* Backdrop form */
 
-.backdrop-form {
-}
 .form-title {
   color: var(--navyblue, #2E2F42);
   text-align: center;
@@ -678,9 +675,6 @@ fieldset {
   line-height: 1.5;
   letter-spacing: 0.32px;
   margin-bottom: 16px;
-}
-.inputs-container {
-
 }
 .backdrop-form-label {
   color: var(--lightslate, #8E8F99);
@@ -723,7 +717,7 @@ fieldset {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
-  margin-bottom: 16;
+  margin-bottom: 16px;
 }
 .backdrop-comment::placeholder {
   color: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
@@ -733,6 +727,29 @@ fieldset {
   align-items: center;
   margin-bottom: 24px;
   gap: 8px;
+}
+.checkbox-icon-container {
+  color: transparent;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(46, 47, 66, 0.40);
+}
+.checkbox-icon {
+  fill: currentColor;
+  transform: scale(0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-checkbox:checked + .checkbox-icon-container {
+  background-color: #4D5AE5;
+  border: none;
+  color: white;
+}
+.backdrop-checkbox:checked + .checkbox-icon-container .checkbox-icon {
+  transform: scale(1);
 }
 .checkbox-text {
   color: var(--lightslate, #8E8F99);
