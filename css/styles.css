@@ -130,7 +130,7 @@ input {
 }
 
 .navigation-links {
-  color: var(--navyblue, #2E2F42);
+  color: var(--navyblue, #2e2f42);
   font-weight: 500;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -439,7 +439,6 @@ fieldset {
   column-gap: 24px;
   row-gap: 48px;
   flex-wrap: wrap;
-  
 }
 
 .portfolio-section-list-li {
@@ -559,16 +558,16 @@ fieldset {
   margin-left: 80px;
 }
 .footer-form-text {
-  color: var(--white, #FFF);
+  color: var(--white, #fff);
   font-weight: 500;
   margin-bottom: 16px;
 }
 .footer-input {
   border-radius: 4px;
-  border: 1px solid var(--white, #FFF);
+  border: 1px solid var(--white, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 264px;
-  color: var(--white, #FFF);
+  color: var(--white, #fff);
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.48px;
@@ -583,7 +582,7 @@ fieldset {
 .footer-form-button {
   min-width: 165px;
   border-radius: 4px;
-  background: var(--iris, #4D5AE5); 
+  background: var(--iris, #4d5ae5);
   border: none;
   color: white;
   display: inline-flex;
@@ -664,16 +663,10 @@ fieldset {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden {
-  visibility: hidden;
-  pointer-events: none;
-  opacity: 0;
-}
-
 /* Backdrop form */
 
 .form-title {
-  color: var(--navyblue, #2E2F42);
+  color: var(--navyblue, #2e2f42);
   text-align: center;
   font-family: Roboto;
   font-weight: 500;
@@ -685,9 +678,9 @@ fieldset {
   margin-bottom: 8px;
 }
 .backdrop-form-label {
-  color: var(--lightslate, #8E8F99);
+  color: var(--lightslate, #8e8f99);
   font-size: 12px;
-  line-height: 1.17; 
+  line-height: 1.17;
   letter-spacing: 0.48px;
   margin-bottom: 4px;
   display: block;
@@ -696,14 +689,14 @@ fieldset {
   position: relative;
 }
 .input-container:focus-within .backdrop-input {
-  border-color:#4D5AE5;
+  border-color: #4d5ae5;
 }
 .input-container:focus-within .input-svg {
-  fill: #4D5AE5;
+  fill: #4d5ae5;
 }
 .backdrop-input {
   border-radius: 4px;
-  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   display: block;
   padding: 8px 38px;
   width: 100%;
@@ -731,10 +724,10 @@ fieldset {
   color: rgba(46, 47, 66, 0.4);
 }
 .backdrop-comment:focus {
-  border-color: #4D5AE5;
+  border-color: #4d5ae5;
 }
 .backdrop-comment::placeholder {
-  color: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+  color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
 }
 /* Checkbox section */
 
@@ -743,20 +736,23 @@ fieldset {
 }
 .checkbox-container {
   display: block;
-  color: var(--lightslate, #8E8F99);
+  color: var(--lightslate, #8e8f99);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
 }
 .checkbox-icon-container {
-  color: transparent;
+  fill: transparent;
   width: 16px;
   height: 16px;
   border-radius: 2px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid rgba(46, 47, 66, 0.40);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-icon {
   fill: currentColor;
@@ -764,15 +760,15 @@ fieldset {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop-checkbox:checked + .checkbox-icon-container {
-  background-color: #4D5AE5;
+  background-color:  #404bbf;
   border: none;
-  color: white;
+  fill: #F4F4FD;
 }
 .backdrop-checkbox:checked + .checkbox-icon-container .checkbox-icon {
   transform: scale(1);
 }
 .checkbox-link {
-  color: var(--iris, #4D5AE5);
+  color: var(--iris, #4d5ae5);
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.48px;
@@ -785,10 +781,10 @@ fieldset {
   display: block;
   border-radius: 4px;
   border: none;
-  background: var(--iris, #4D5AE5);
+  background: var(--iris, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
-  color: var(--white, #FFF);
+  color: var(--white, #fff);
   text-align: center;
   font-style: normal;
   font-weight: 500;
