@@ -728,6 +728,10 @@ fieldset {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
+  color: rgba(46, 47, 66, 0.4);
+}
+.backdrop-comment:focus {
+  border-color: #4D5AE5;
 }
 .backdrop-comment::placeholder {
   color: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
@@ -738,9 +742,11 @@ fieldset {
   margin-bottom: 24px;
 }
 .checkbox-container {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: block;
+  color: var(--lightslate, #8E8F99);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
 }
 .checkbox-icon-container {
   color: transparent;
@@ -764,12 +770,6 @@ fieldset {
 }
 .backdrop-checkbox:checked + .checkbox-icon-container .checkbox-icon {
   transform: scale(1);
-}
-.checkbox-text {
-  color: var(--lightslate, #8E8F99);
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.48px;
 }
 .checkbox-link {
   color: var(--iris, #4D5AE5);
