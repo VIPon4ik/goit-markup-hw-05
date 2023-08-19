@@ -737,10 +737,10 @@ fieldset {
 .backdrop-checkbox:checked + .checkbox-container .checkbox-icon-container {
   background-color:  #404bbf;
   border: none;
+  fill: #F4F4FD;
 }
 .backdrop-checkbox:checked + .checkbox-container .checkbox-icon {
   transform: scale(1);
-  fill: #F4F4FD;
 }
 .checkbox-container {
   display: block;
@@ -763,7 +763,6 @@ fieldset {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-icon {
-  fill: currentColor;
   transform: scale(0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
